@@ -3,42 +3,56 @@
 #include <stdio.h>  
 int main ()
 {
-/*déclaration*/
+/*dÃ©claration*/
 float salMoy
 float salMin
 float salHeb
 char Poste 
-
+int nbProg 
+int nbAnal 
+int nbOper
+int nbInde
+int nbEmp
 
 /*traitement*/
+do 
+{
 printf ("Entrez une des lettres suivantes pour identifier votre poste:\nP pour programmeur\nA pour analyste\nO pour operateur\nI pour indetermine\nEntrez egalement votre salaire hebdomadaire:\n"); 
 scanf ("%c%f", &Poste, &salHeb); 
+
 switch(poste)
 {
 	case 'P':
 	case 'p': 
-		printf("Programmeur\n");
+	++nbProg;
+		printf("Cette personne est un Programmeur remuneree %f par semaine. \n") ,salPro;
 		break;
 	case 'A':
 	case 'a': 
-		printf("Analyste\n");
+	++nbAnal;
+		printf("Cette personne est un Analyste remuneree %f par semaine. \n") ,salAna;
 		break;
 	case 'O':
-	case 'o': 
-		printf("Operateur\n");
+	case 'o':
+	++nbOper; 
+		printf("Cette personne est un Operateur remuneree %f par semaine. \n"), salHeb;
 		break;
 	case 'I':
 	case 'i': 
-		printf("Indetermine\n");
+	++nbInde;
+		printf("Cette personne est un Indetermine remuneree %f par semaine. \n") salHeb;
 		break;
 }
-&salHeb = 
+printf ("Voulez-vous entrer un autre employe (O ou N)?\n");
+scanf (" %c", &continuer);
+} while (continuer == 'O' || continuer == 'o');
 
 
 
-
-printf ("Il s'agit d'un &''\n", salMoy); 
-
-printf ("Le salaire moyen des programmeurs est de %f\n", salMoy); 
+printf ("Le salaire moyen des programmeurs est de %f\n", somnbProf /  ); 
 printf ("Le salaire minimum d'un operateur est de %f\n", salMin); 
+
+return 0; 
+}
+
 }
